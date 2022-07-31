@@ -1,0 +1,118 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_goodbye
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_unhappy
+
+- story: path 1
+  steps:
+  - intent: nguyen_nhan
+  - action: utter_nguyen_nhan
+
+- story: path 2
+  steps:
+  - intent: trieu_chung
+  - action: utter_trieu_chung
+
+- story: path 3
+  steps:
+  - intent: info
+  - action: utter_info
+
+- story: path 4
+  steps:
+  - intent: di_chung
+  - action: utter_di_chung
+
+- story: path 5
+  steps:
+  - intent: dieu_tri
+  - action: utter_dieu_tri
+
+- story: path 6
+  steps:
+  - intent: phong_benh
+  - action: utter_phong_benh
+
+- story: path 7
+  steps: 
+  - intent: tim_benh_vien
+  - action: find_hospital
+
+- story: path 8
+  steps:
+  - intent: chuan_doan
+  - action: utter_chuan_doan
+
+- story: path 9
+  steps:
+  - intent: lay_nhiem
+  - action: utter_lay_nhiem
+
+- story: path 10
+  steps:
+  - intent: bot_challenge
+  - action: utter_bot_challenge
+
+- story: path 11
+  steps:
+  - intent: nen_an
+  - action: utter_nen_an
+
+- story: path 12
+  steps:
+  - intent: khong_an
+  - action: utter_khong_an
+
+- story: path 13
+  steps:
+  - intent: nen_va_khong_nen
+  - action: utter_nen_va_khong_nen
+
+- story: story 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info
+  - action: utter_info
+  - intent: trieu_chung
+  - action: utter_trieu_chung
+  - intent: dieu_tri
+  - action: utter_dieu_tri
+
+- story: story 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info
+  - action: utter_info
+  - intent: dieu_tri
+  - action: utter_dieu_tri
+
+- story: story 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: info
+  - action: utter_info
+  - intent: dieu_tri
+  - action: utter_dieu_tri

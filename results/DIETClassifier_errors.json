@@ -1,0 +1,23 @@
+[
+  {
+    "text": "chữa trị ở đâunghệ an?",
+    "entities": [
+      {
+        "start": 14,
+        "end": 21,
+        "value": "nghệ an",
+        "entity": "address"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "address",
+        "start": 19,
+        "end": 21,
+        "confidence_entity": 0.58685302734375,
+        "value": "an",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

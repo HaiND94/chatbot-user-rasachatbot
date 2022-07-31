@@ -1,0 +1,25 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say sorry when guess unhappy
+  steps:
+  - intent: mood_unhappy
+  - action: utter_unhappy
+
+- rule: find hospital
+  steps:
+  - intent: tim_benh_vien
+  - action: find_hospital
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+
+

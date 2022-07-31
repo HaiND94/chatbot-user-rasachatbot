@@ -1,0 +1,226 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - chào bạn
+    - chào
+    - chào bot
+    - làm quen nhé
+    - làm quen chút
+    - chào buổi sáng
+    - chào buổi tối
+    - chào ngày mới
+    - chào cái nào
+    - chào đi
+    - chào em
+    - chào anh
+    - vfast
+    - alo
+    - blo
+    - clo
+    - có ai ở đây không?
+    - có ai không?
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - tạm biệt rất vui được nói chuyện với bạn
+    - tôi có việc bận
+    - nói chuyện sau
+    - bai
+    - paipai
+    - pai pai
+    - bai bai
+    - baibai
+    - lúc khác nói chuyện
+    - thôi chào nhé
+    - thôi
+    - dừng nhé
+
+- intent: info
+  examples: |
+    - bệnh chân tay miệng là gì?
+    - bệnh ra sao?
+    - bệnh có nguy hiểm không?
+    - có nguy hiểm không?
+    - nguy hiểm
+
+- intent: nguyen_nhan
+  examples: |
+    - nguyên nhân
+    - bệnh hình thành do đâu?
+    - nguồn gốc
+    - tác nhân gây bệnh
+    - lý do
+    - vì sao bị bệnh
+  
+- intent: lay_nhiem
+  examples: |
+    - lây nhiễm như thế nào?
+    - lây nhiễm qua con đường gì?
+    - lây nhiễm ra sao?
+    - lây nhiễm
+    - lây lan
+    - lan truyền
+    - con đường lây nhiễm
+    - con đường lan truyền
+
+- intent: trieu_chung
+  examples: |
+    - triệu chứng gì
+    - triệu chứng
+    - biểu hiện
+    - bệnh có triệu chứng như thế nào?
+    - biểu hiện của bệnh là gì?
+    - bệnh có biểu hiện như thế nào?
+    - người bệnh sẽ có những biểu hiện gì?
+    - giai đoạn đầu triệu chứng ra sao?
+    - các dấu hiệu nhận biết
+    - các dấu hiệu nhận biết sớm
+    - triệu chứng lâm sàn
+    - phân biệt triệu chứng với các bệnh khác
+    - cách phân biệt với bệnh thủy đậu
+    - phân biệt với sốt phát ban
+
+- intent: di_chung
+  examples: |
+    - bệnh có hậu quả
+    - bệnh để lại di chứng gì không?
+    - di chứng
+    - hậu quả 
+    - biến chứng
+
+- intent: dieu_tri
+  examples: |
+    - cách chưa trị như thế nào?
+    - chăm sóc bệnh nhân ra sao?
+    - chữa trị
+    - chăm sóc
+    - điều trị
+    - chăm sóc ra sao?
+    - điều trị như thế nào?
+    - có cần đưa đến bệnh viện không?
+    - uống thuốc ra sao?
+    - nên làm gì?
+    - không nên làm gì?
+
+- intent: tim_benh_vien
+  examples: |
+    - [nghệ an](address) chữa trị ở đâu?
+    - [nghệ an](address) điều trị ở đâu?
+    - chữa trị ở đâu[nghệ an](address)?
+    - [hà nội](address) nên chữa bệnh ở đâu?
+    - bệnh viện nào ở [hà nội](address)?
+    - có thể khám ở bệnh viện nào ở [hà nội](address)?
+    - ở [hải phòng](address) thì khám ở đâu?
+    - ở [nghệ an](address) thì chữa bệnh ở đâu?
+    - nên điều trị ở đâu [nghệ an](address)?
+    - bệnh viện nào uy tín ở [nghệ an](address)?
+    - [nghệ an](address) chữa trị tại bệnh viện nào thì tốt?
+    - [nam định](address) thì nên chữa trị tại bệnh viện nào?
+    - [nghệ an](address) bệnh viện?
+    - bệnh viện tại [nghệ an](address)?
+
+- intent: phong_benh
+  examples: |
+    - cách phòng bệnh
+    - phòng bệnh như thế nào?
+    - chủ động phòng ngừa
+    - làm sao để tránh mắc bệnh
+    - tránh bệnh
+    - phòng bệnh cá nhân
+    - phòng bệnh
+    - phòng ngừa
+    - chủ động phòng tránh
+  
+- intent: nen_an
+  examples: |
+    - nên ăn gì?
+    - nên uống gì?
+    - Được ăn gì?
+
+- intent: khong_an
+  examples: |
+    - không nên ăn gì?
+    - cần kiêng gì?
+    - kiêng gì?
+    - không được ăn gì?
+    - không được phép ăn gì?
+
+
+- intent: nen_va_khong_nen
+  examples: |
+    - nên và không nên ăn gì?
+    - chế độ dinh dưỡng ra sao?
+    - ăn uống như thế nào?
+    - ăn uống ra sao?
+    - dinh dưỡng như thế nào?
+    - ăn có ảnh hưởng gì không?
+    - chế độ dinh dưỡng ra sao?
+  
+- intent: chuan_doan
+  examples: |
+    - chuẩn đoán và xác định bệnh
+    - xét nghiệm những gì?
+    - khám như thế nào?
+    - thăm khám ra sao?
+    - làm thế nào để biết mình có bị bệnh chân tay miệng không?
+    - làm sao để xét nghiệm bệnh
+
+- intent: mood_great
+  examples: |
+    - tốt lắm
+    - đúng rồi
+    - hay lắm
+    - quá hay
+    - hay vl
+    - hay rô
+    - đúng vl
+    - chuẩn luôn
+    - chuẩn vl
+    - chuẩn không cần chỉnh
+    - chuẩn lắm
+    - quá chuẩn
+    - không sai
+    - không lẫn vào đâu được
+
+- intent: mood_unhappy
+  examples: |
+    - như shit
+    - như cứt
+    - như ứt
+    - dốt
+    - ngu vl
+    - bot ngu quá
+    - ngốc nghếch
+    - ngu như lợn
+    - không có não à
+    - đồ không có não
+    - quá ngu luôn
+    - ngu người
+    - ếch nhựa
+    - quên mang não
+    - dốt
+    - dốt đặc
+    - sai
+    - sai toẹt
+    - không đúng gì cả
+    - như lìn
+
+- intent: bot_challenge
+  examples: |
+    - bạn là ai?
+    - ai đây?
+    - tôi đang nói chuyện với ai đây?
+    - bạn là bot ư?
+    - cho tôi thông tin của bạn?
+    - bot tên là gì?
+    - tên bot là gì?
+    - danh tính của bot là gì?
+    - danh tính?
+    - tôi có thể gọi bot là gì?
